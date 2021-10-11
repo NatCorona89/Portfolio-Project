@@ -113,6 +113,10 @@ p {
   max-height: 40px;
 }
 
+img {
+  vertical-align: middle;
+}
+
 nav {
   padding: 20px 0;
 }
