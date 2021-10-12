@@ -40,9 +40,14 @@ p {
 }
 
 .hero {
-  background: var(--secondary-color);
+  background: rgba(245, 184, 245, 0.317);
   text-align: center;
-  padding: 80px 20px;
+  padding: 160px 20px;
+  margin: 0;
+  background: linear-gradient(90deg, #f9b368, #ff77ff, #7a94fc);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: fit-content;
 }
 
 .hero p {
@@ -57,6 +62,7 @@ p {
   font-weight: normal;
   line-height: 1.5;
   font-size: 24px;
+  color: #272142;
 }
 
 .content-container {
@@ -122,9 +128,22 @@ nav {
   padding: 20px 0;
 }
 
+.navbar-branding {
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  margin-top: 8px;
+  padding: 15px 15px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #f9b368, #ff77ff, #7a94fc);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: fit-content;
+}
+
 nav ul {
   padding: 0;
   margin: 0;
+  font-size: 24px;
 }
 
 nav li {
@@ -142,6 +161,11 @@ nav a {
 
 nav a:hover,
 nav li a.active {
+  color: var(--branding-color);
+}
+
+.contact-links {
+  text-decoration: none;
   color: var(--branding-color);
 }
 
@@ -174,7 +198,7 @@ footer .social-links a {
   color: var(--branding-color);
   background: var(--secondary-color);
   padding: 10px 14px;
-  font-size: 18px;
+  font-size: 32px;
   border-radius: 50%;
   transition: all 100ms ease-in-out;
 }
@@ -184,10 +208,23 @@ footer .social-links a:hover {
   background: var(--branding-color);
 }
 
+.open-source {
+  font-size: 20px;
+  color: var(--branding-color);
+}
+
+.open-source-link {
+  text-decoration: none;
+  color: var(--branding-color);
+}
+
+.open-source-link:visited {
+  color: var(--branding-color);
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
-    line-height: 56px;
+    line-height: 1.5;
   }
   h2 {
     font-size: 44px;
@@ -195,6 +232,10 @@ footer .social-links a:hover {
 
   h3 {
     font-size: 26px;
+  }
+
+  nav ul {
+    font-size: 14px;
   }
 
   .content {
@@ -207,3 +248,15 @@ footer .social-links a:hover {
     text-align: center;
   }
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
