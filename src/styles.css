@@ -136,7 +136,7 @@ nav {
   border-radius: 50%;
   background: linear-gradient(90deg, #f9b368, #ff77ff, #7a94fc);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 15s ease infinite;
   height: fit-content;
 }
 
