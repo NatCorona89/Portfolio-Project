@@ -1,5 +1,5 @@
 :root {
-  --branding-color: #6c63ff;
+  --branding-color: #222043;
   --secondary-color: #f9f7fe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
@@ -18,7 +18,17 @@ h6 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
+  
 }
+
+.visible, .invisible {
+  opacity: 0.0;
+  transition: opacity 0.5s ease;
+}
+.visible {
+  opacity: 1.0;
+}
+
 
 h1 {
   font-size: 96px;
@@ -40,21 +50,45 @@ p {
 }
 
 .hero {
-  background: rgba(245, 184, 245, 0.317);
+  background: rgba(41, 6, 97, 0.301);
   text-align: center;
   padding: 160px 20px;
   margin: 0;
-  background: linear-gradient(90deg, #f9b368, #ff77ff, #7a94fc);
+  background: linear-gradient(90deg, #525252, #bdc0c0, #f3f5fa);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: fit-content;
+}
+
+.hero .animate__animated {
+  animation-duration: 3s;
+} 
+
+.weather-img .animate__animated {
+  animation-duration: 3s;
+}
+
+.minimalism-img .animate__animated {
+  animation-duration: 3s;
+}
+
+.dictionary-img .animate__animated {
+  animation-duration: 3s;
+}
+
+.description-animate .animate__animated {
+  animation-duration: 3s;
+}
+
+Footer .animate__animated {
+  animation-duration: 3s;
 }
 
 .hero p {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
-  color: #272142;
+  color: #222043;
 }
 
 .hero h2 {
@@ -62,7 +96,7 @@ p {
   font-weight: normal;
   line-height: 1.5;
   font-size: 24px;
-  color: #272142;
+  color: #222043;
 }
 
 .content-container {
@@ -134,7 +168,7 @@ nav {
   margin-top: 8px;
   padding: 15px 15px;
   border-radius: 50%;
-  background: linear-gradient(90deg, #f9b368, #ff77ff, #7a94fc);
+  background: linear-gradient(90deg, #525252, #bdc0c0, #f3f5fa);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: fit-content;
@@ -155,7 +189,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #272142;
+  color: #222043;
   transition: all 100ms ease-in-out;
 }
 
@@ -221,6 +255,10 @@ footer .social-links a:hover {
 .open-source-link:visited {
   color: var(--branding-color);
 }
+
+
+
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -259,3 +297,4 @@ footer .social-links a:hover {
     100% {
         background-position: 0% 50%;
     }
+

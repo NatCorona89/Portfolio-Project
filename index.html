@@ -24,7 +24,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
-
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
@@ -34,6 +37,7 @@
       src="https://kit.fontawesome.com/8717cb0f1b.js"
       crossorigin="anonymous"
     ></script>
+  
   </head>
   <body>
     <div class="container">
@@ -60,11 +64,11 @@
       </nav>
     </div>
     <div class="hero">
-      <p>👋 Hello, I am</p>
-      <h1>Natalie Gilliam</h1>
-      <h2 class="mb-5">Front-end developer based in the United States</h2>
+      <p class="animate__animated animate__fadeInLeft">👋 Hello, I am</p>
+      <h1 class="animate__animated animate__fadeInRight">Natalie Gilliam</h1>
+      <h2 class="mb-5 animate__animated animate__fadeInLeft">Front-End React Developer & Software Engineer</h2>
       <div>
-        <a href="/contact.html" class="btn btn-branding" title="Contact Me"
+        <a href="/contact.html" class="btn btn-branding mb-5 animate__animated animate__fadeInRight" title="Contact Me"
           >Contact me</a
         >
       </div>
@@ -73,81 +77,84 @@
       Featured Projects - Completed by Natalie Gilliam
     </p>
     <div class="container">
-      <div class="row mb-5">
-        <div class="col d-none d-lg-block">
-          <img
-            src="images/minimalism.png"
-            class="img-fluid"
-            alt="Minimalism Project Preview"
-          />
-        </div>
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">Minimalism App</h2>
-            <p class="mb-5 text-muted">
-              I entered the world of front-end development by gaining some knowledge in HTML, CSS, and JavaScript. I used my knowledge of these languages, along with my new skills in VS Code, to build a landing page about Minimalism, something that I am passionate about. The page utilizes JavaScript functions to create user interaction.
-            </p>
-            <a href="https://dapper-pixie-75f99e.netlify.app/" class="btn btn-branding-outline mb-5" target="blank">
-              Learn More
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">Weather App</h2>
-            <p class="mb-5 text-muted">
-              I built a Vanilla JavaScript weather app in SheCodes Plus, an advanced 8-week JavaScript coding workshop. Building upon my previously-gained knowledge, I also became skilled in Bootstrap, API’s, real-life development workflow, hosting, and advanced JavaScript. I combined all of these skills to create a fully-functioning weather app.
-            </p>
-            <a href="https://wizardly-thompson-80bb2a.netlify.app/" class="btn btn-branding-outline mb-5" target="blank">
-              Learn More
-            </a>
-          </div>
-        </div>
-        <div class="col d-none d-lg-block">
-          <img
-            src="images/weather.png"
-            class="img-fluid"
-            alt="Weather Project Preview"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col d-none d-lg-block">
-          <img
-            src="images/portfolio.png"
-            class="img-fluid"
-            alt="Portfolio Project Preview"
-          />
-        </div>
-        <div class="col">
-          <div class="project-description">
+      <div class="row mb-5"> 
+        <div class="col description-animate">
+          <div class="project-description animate__animated animate__fadeInLeft">
             <h2 class="mb-5">Dictionary App</h2>
             <p class="mb-5 text-muted">
               Dictionary description......
             </p>
             <a href="https://friendly-wozniak-e483a6.netlify.app/" class="btn btn-branding-outline mb-3" target="blank">
-              Learn More
+              View Project
+            </a>
+          </div>
+        </div>
+        <div class="dictionary-img col d-none d-lg-block mb-5 mt-5">
+          <img
+            src="images/dictionary.png"
+            class="img-fluid animate__animated animate__fadeInRight"
+            alt="Portfolio Project Preview"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="weather-img col d-none d-lg-block mt-5">
+          <img
+            src="images/weather.png"
+            class="img-fluid animate__animated animate__fadeInLeft"
+            alt="Weather Project Preview"
+          />
+        </div>
+        <div class="description-animate col">
+          <div class="project-description animate__animated animate__fadeInRight">
+            <h2 class="mb-5">Weather App</h2>
+            <p class="mb-5 text-muted">
+              I built a Vanilla JavaScript weather app in SheCodes Plus, an advanced 8-week JavaScript coding workshop. Building upon my previously-gained knowledge, I also became skilled in Bootstrap, API’s, real-life development workflow, hosting, and advanced JavaScript. I combined all of these skills to create a fully-functioning weather app.
+            </p>
+            <a href="https://wizardly-thompson-80bb2a.netlify.app/" class="btn btn-branding-outline mb-5" target="blank">
+              View Project
             </a>
           </div>
         </div>
       </div>
-      <footer>
-        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
-          <div>
-            <h3>Work Inquiry</h3>
-            <p class="text-muted">Let's Work Together</p>
-          </div>
-          <div>
-            <a
-              href="/contact.html"
-              class="btn btn-branding mt-3"
-              title="Contact Natalie"
-            >
-              Contact Me
+      <div class="row mb-5">
+        <div class="col description-animate">
+          <div class="project-description animate__animated animate__fadeInLeft">
+            <h2 class="mb-5">Minimalism App</h2>
+            <p class="mb-5 text-muted">
+              I entered the world of front-end development by gaining some knowledge in HTML, CSS, and JavaScript. I used my knowledge of these languages, along with my new skills in VS Code, to build a landing page about Minimalism, something that I am passionate about. The page utilizes JavaScript functions to create user interaction.
+            </p>
+            <a href="https://dapper-pixie-75f99e.netlify.app/" class="btn btn-branding-outline mb-5" target="blank">
+              View Project
             </a>
           </div>
+        </div>
+        <div class="minimalism-img col d-none d-lg-block mt-5">
+          <img
+            src="images/minimalism.png"
+            class="img-fluid animate__animated animate__fadeInRight"
+            alt="Minimalism Project Preview"
+          />
+        </div>
+      </div>
+      
+      <footer>
+        
+            <div class="contact-box justify-content-between mb-5 d-none d-md-flex animate__animated animate__fadeInUp">
+              <div>
+                <h3>Work Inquiry</h3>
+                <p class="text-muted">Let's Work Together</p>
+              </div>
+              <div>
+                <a
+                  href="/contact.html"
+                  class="btn btn-branding mt-3"
+                  title="Contact Natalie"
+                >
+                  Contact Me
+                </a>
+              </div>
+           
         </div>
         <div class="social-links d-flex justify-content-center">
           <a
