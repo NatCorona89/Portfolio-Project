@@ -18,17 +18,16 @@ h6 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
-  
 }
 
-.visible, .invisible {
-  opacity: 0.0;
+.visible,
+.invisible {
+  opacity: 0;
   transition: opacity 0.5s ease;
 }
 .visible {
-  opacity: 1.0;
+  opacity: 1;
 }
-
 
 h1 {
   font-size: 96px;
@@ -62,7 +61,7 @@ p {
 
 .hero .animate__animated {
   animation-duration: 3s;
-} 
+}
 
 .weather-img .animate__animated {
   animation-duration: 3s;
@@ -256,9 +255,6 @@ footer .social-links a:hover {
   color: var(--branding-color);
 }
 
-
-
-
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -288,13 +284,13 @@ footer .social-links a:hover {
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
