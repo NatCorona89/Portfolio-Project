@@ -63,6 +63,13 @@ p {
   animation-duration: 3s;
 }
 
+.toolBox .animate__animated {
+  animation-duration: 3s;
+}
+.toolBox .animate__animated {
+  animation-duration: 3s;
+}
+
 .weather-img .animate__animated {
   animation-duration: 3s;
 }
@@ -197,6 +204,37 @@ nav li a.active {
   color: var(--branding-color);
 }
 
+.toolBox {
+  max-width: 1050px;
+  padding: 40px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.toolBox h2 {
+  font-family: var(--heading-font-family);
+  font-size: 50px;
+  margin-bottom: 25px;
+  text-decoration: underline;
+}
+
+.toolsIcons {
+  padding: 6px 10px 20px 10px;
+}
+
+.toolsIcons .row {
+  padding: 5px;
+}
+
+.toolsIcons .col {
+  padding: 22px;
+}
+
+.toolsIcons i {
+  font-size: 50px;
+}
+
 .contact-links {
   text-decoration: none;
   color: var(--branding-color);
@@ -280,6 +318,15 @@ footer .social-links a:hover {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+  .toolBox {
+    text-align: center;
+    padding: 0px;
+    border-radius: 10px;
+  }
+
+  .toolsIcons {
+    font-size: 14px;
   }
 }
 
