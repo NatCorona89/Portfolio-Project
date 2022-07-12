@@ -9,6 +9,10 @@ body {
   font-family: var(--default-font-family);
 }
 
+.logo {
+  max-height: 40px;
+}
+
 h1,
 h2,
 h3,
@@ -34,7 +38,7 @@ nav {
   border-radius: 50%;
   background: linear-gradient(90deg, #525252, #bdc0c0, #f3f5fa);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
   height: fit-content;
 }
 
@@ -78,7 +82,7 @@ nav li a.active {
   margin: 0;
   background: linear-gradient(90deg, #525252, #bdc0c0, #f3f5fa);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
   height: fit-content;
 }
 
@@ -192,6 +196,8 @@ nav li a.active {
   }
 }
 
+/* Feature Projects */
+
 .featured-projects .animate__animated {
   animation-duration: 3s;
 }
@@ -200,19 +206,10 @@ nav li a.active {
   font-size: 26px;
 }
 
-.visible,
-.invisible {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.visible {
-  opacity: 1;
-}
-
 /* Project Section */
 
-.projects {
-  background: linear-gradient(90deg, #222043, #bdc0c0, #b9b9ba);
+.project {
+  background: linear-gradient(90deg, #222043, #959696, #b9b9ba);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   height: fit-content;
@@ -231,14 +228,14 @@ nav li a.active {
 }
 
 .project-card {
-  background: linear-gradient(90deg, #b9b9ba, #bdc0c0, #222043);
+  background: linear-gradient(90deg, #b9b9ba, #959696, #222043);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   height: fit-content;
   padding: 3rem;
-  padding-bottom: 2rem;
-  min-height: 450px;
-  width: 325px;
+  padding-bottom: 3rem;
+  height: 550px;
+  width: 340px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -246,27 +243,20 @@ nav li a.active {
 }
 
 .project-card h2 {
-  color: var(--secondary-color);
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  color: #030213;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
-.project-card .dictionary {
+.project-card img {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  width: 300px;
-  height: 300px;
-}
-.project-card .weather {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 300px;
-  height: 300px;
-}
-.project-card .burger {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .project-description .btn-branding-outline {
@@ -290,6 +280,10 @@ nav li a.active {
   .project-wrapper {
     padding-bottom: 0;
   }
+  .product-card img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -298,26 +292,25 @@ nav li a.active {
     align-items: center;
   }
   .project-card {
-    width: 90%;
+    width: 70%;
     margin-bottom: 2rem;
     justify-content: space-between;
   }
+  .product-card img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
-.weather-img .animate__animated {
+.animate__animated {
   animation-duration: 3s;
-}
-
-.burger-img .animate__animated {
-  animation-duration: 3s;
-  width: 750px;
-  max-width: 100%;
-  max-height: 90%;
 }
 
 .description-animate .animate__animated {
   animation-duration: 3s;
 }
+
+/* Contact Section */
 
 .content-container {
   padding: 60px 20px;
@@ -345,10 +338,6 @@ nav li a.active {
 
 .content {
   margin: 30px;
-}
-
-.logo {
-  max-height: 40px;
 }
 
 img {
