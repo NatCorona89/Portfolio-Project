@@ -212,7 +212,10 @@ nav li a.active {
 /* Project Section */
 
 .projects {
-  background: var(--branding-color);
+  background: linear-gradient(90deg, #222043, #bdc0c0, #b9b9ba);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: fit-content;
   color: var(--secondary-color);
   padding: 6rem calc((100vw - 1100px) / 2);
   text-align: center;
@@ -228,30 +231,42 @@ nav li a.active {
 }
 
 .project-card {
+  background: linear-gradient(90deg, #b9b9ba, #bdc0c0, #222043);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: fit-content;
   padding: 3rem;
   padding-bottom: 2rem;
   min-height: 450px;
   width: 325px;
-  background: var(--white);
-  color: var(--secondary-color);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.project-card .dictionary {
-  margin: 2rem;
-}
-.project-card .weather {
-  margin: 2rem;
-}
-.project-card .burger {
-  margin: 2rem;
+.project-card h2 {
+  color: var(--secondary-color);
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
-.project-description h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+.project-card .dictionary {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  height: 300px;
+}
+.project-card .weather {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  height: 300px;
+}
+.project-card .burger {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  height: 300px;
 }
 
 .project-description .btn-branding-outline {
@@ -271,14 +286,21 @@ nav li a.active {
   animation-duration: 3s;
 }
 
-@media (max-width: 1000px) {
-  .project-description {
-    padding: 0;
-    text-align: center;
+@media screen and (max-width: 900px) {
+  .project-wrapper {
+    padding-bottom: 0;
   }
+}
 
-  .project-description h2 {
-    margin-top: 6rem;
+@media screen and (max-width: 1100px) {
+  .project-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 90%;
+    margin-bottom: 2rem;
+    justify-content: space-between;
   }
 }
 
