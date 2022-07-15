@@ -30,6 +30,12 @@ nav {
   padding: 20px 0;
 }
 
+.nav-container {
+  background: black;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .navbar-branding {
   font-size: 30px;
   font-family: "Dancing Script", cursive;
@@ -40,6 +46,10 @@ nav {
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   height: fit-content;
+}
+
+nav .logo-1 {
+  color: black;
 }
 
 nav ul {
@@ -58,13 +68,13 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #222043;
+  color: whitesmoke;
   transition: all 100ms ease-in-out;
 }
 
 nav a:hover,
 nav li a.active {
-  color: var(--branding-color);
+  color: rgb(113, 113, 113);
 }
 
 @media (max-width: 900px) {
@@ -209,9 +219,9 @@ nav li a.active {
 /* Project Section */
 
 .project {
-  background: linear-gradient(90deg, #222043, #959696, #b9b9ba);
+  background: linear-gradient(90deg, #000000, #959696, #fafafb);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 12s ease infinite;
   height: fit-content;
   color: var(--secondary-color);
   padding: 6rem calc((100vw - 1100px) / 2);
@@ -225,19 +235,18 @@ nav li a.active {
   align-items: flex-start;
   padding-left: 1rem;
   padding-right: 1rem;
-
   z-index: 2;
 }
 
 .project-card {
-  background: linear-gradient(90deg, #b9b9ba, #818383, #222043);
+  background: linear-gradient(90deg, #fafafb, #818383, #000000);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 12s ease infinite;
   height: fit-content;
-  padding: 3rem;
+  padding: 2rem;
   padding-bottom: 3rem;
   margin-bottom: 2rem;
-  height: 550px;
+  height: 600px;
   width: 340px;
   border-radius: 10px;
   display: flex;
@@ -249,7 +258,7 @@ nav li a.active {
 
 .project-card h2 {
   font-size: clamp(2rem, 5vw, 2.5rem);
-  color: #030213;
+  color: black;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -258,8 +267,6 @@ nav li a.active {
 }
 
 .project-card img {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   width: 250px;
   height: 250px;
   animation-duration: 3s;
@@ -278,11 +285,17 @@ nav li a.active {
   left: calc(-1 * 5px);
   height: calc(100% + 5px * 2);
   width: calc(100% + 5px * 2);
-  background: linear-gradient(60deg, #570b85, #fefefe);
+  background: linear-gradient(
+    60deg,
+    #00f260,
+    #0575e6,
+    rgb(247, 16, 255),
+    rgb(134, 6, 134)
+  );
   border-radius: calc(2 * 10px);
   z-index: 3;
   animation: animate 10s infinite;
-  filter: blur(20px);
+  filter: blur(50px);
 }
 
 .gradient-border:hover:after {
@@ -321,16 +334,11 @@ nav li a.active {
 .glow-on-hover:before {
   content: "";
   background: linear-gradient(
-    45deg,
-    #570b85,
-    #fefefe,
-    #4e2086,
-    #301853,
-    #fcfbfd,
-    #301853,
-    #4e2086,
-    #f3eef5,
-    #570b85
+    60deg,
+    #00f260,
+    #0575e6,
+    rgb(247, 16, 255),
+    rgb(134, 6, 134)
   );
   position: absolute;
   top: -2px;
