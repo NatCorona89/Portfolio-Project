@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
      <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -43,6 +44,7 @@
     <script src="src/portfolio.js"></script>
   </head>
   <body>
+    <!-- Navbar Section -->
     <div class="nav-container">
       <nav class="d-flex justify-content-between">
         <p class="navbar-branding">
@@ -66,6 +68,7 @@
         </ul>
       </nav>
     </div>
+    <!-- Hero Section -->
     <div class="hero">
       <p class="animate__animated animate__fadeInLeft">👋 Hello, I am</p>
       <h1 class="animate__animated animate__fadeInRight">Natalie Gilliam</h1>
@@ -76,98 +79,52 @@
         >
       </div>
     </div>
-    <div class="toolBox animate__animated animate__fadeInLeft mb-5 mt-5 border border-2 border-dark">
-      <h2 class="animate__animated animate__fadeInLeft">My Arsenal</h2>
-      <div class="toolsIcons animate__animated animate__fadeInLeft">
-        <div class="row">
-          <div class="col">
-            <i class="fab fa-html5"></i>
-            <div class="toolName">HTML</div>
+    <!-- Skills Section -->
+    <div class="skills">
+      <h1>
+        Skills To Pay The Bills
+      </h1>
+      <p>
+         I'm a life long learner and enjoy learning new stuff! 
+         Below are some programming languages, toolkits, frameworks, 
+         and libraries that I worked with and like. Some of them I control 
+         better than the other.
+      </p>
+      <img src="images/engineer.svg" alt="engineer image" />
+      <div class="skills-container">
+        <div class="skills-list">
+          <div class="frontendSkills"> 
+            <ul>
+              <li>FRONTEND</li>
+              <li>HTML - CSS - Javascript - React</li>
+            </ul>
           </div>
-          <div class="col">
-            <i class="fab fa-css3-alt"></i>
-            <div class="toolName">CSS</div>
+          <div class="toolSkills">
+            <ul>
+              <li>TOOLS</li>
+              <li>jQuery - API - Bootstrap - SEO - Flexbox</li>
+            </ul>
           </div>
-          <div class="col">
-            <i class="fab fa-js-square"></i>
-            <div class="toolName">JavaScript</div>
+          <div class="applicationSkills">
+            <ul>
+              <li>APPLICATIONS</li>
+              <li>VS Code - Codepen - GitHub - Netlify - Slack</li>
+            </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <i class="fab fa-react"></i>
-            <div class="toolName">React</div>
-          </div>
-          <div class="col">
-            <i class="fas fa-code"></i>
-            <div class="toolName">VS Code</div>
-          </div>
-          <div class="col">
-            <i class="fab fa-codepen"></i>
-            <div class="toolName">Codepen</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <i class="fab fa-github-square"></i>
-            <div class="toolName">GitHub</div>
-          </div>
-          <div class="col">
-            <i class="fas fa-network-wired"></i>
-            <div class="toolName">Netlify</div>
-          </div>
-          <div class="col">
-            <i class="fas fa-dollar-sign"></i>
-            <div class="toolName">jQuery</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <i class="fas fa-cogs"></i>
-            <div class="toolName">API</div>
-          </div>
-          <div class="col">
-            <i class="fab fa-bootstrap"></i>
-            <div class="toolName">Bootstrap</div>
-          </div>
-          <div class="col">
-            <i class="fab fa-google"></i>
-            <div class="toolName">SEO</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-              <i class="fas fa-tablet-alt"></i>
-              <div class="toolName">Responsive Design</div>
-          </div>
-          <div class="col">
-            <i class="fas fa-th-large"></i>
-            <div class="toolName">Flexbox</div>
-          </div>
-          <div class="col">
-            <i class="fas fa-bug"></i>
-            <div class="toolName">Browser DevTools</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <i class="fab fa-slack"></i>
-            <div class="toolName">Slack</div>
-          </div>
-          <div class="col">
-            <i class="far fa-object-group"></i>
-            <div class="toolName">Wireframing</div>
-          </div>
-          <div class="col">
-            <i class="fab fa-figma"></i>
-            <div class="toolName">Figma</div>
+          <div class="designSkills">
+            <ul>
+              <li>DESIGN</li>
+              <li>Responsive Design - Browser DevTools - Wireframing - Figma</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
+    <!-- Featured Projects Section -->
     <p class="featured-projects animate__animated animate__fadeInRight text-center m-5">
     Featured Projects - Completed by Natalie Gilliam
     </p>
+    <!-- Project Section -->
     <div class="project">
       <div class="project-wrapper">
         <div class="gradient-border">
@@ -305,6 +262,7 @@
           </a>
       </div>
     </div>
+    <!-- Footer Section -->
     <footer>
       <div class="contact-box justify-content-between mb-5 d-none d-md-flex animate__animated animate__fadeInUp">
         <div>
