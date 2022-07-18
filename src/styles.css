@@ -170,7 +170,7 @@ nav li a.active {
   margin: auto;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  width: 800px;
 }
 
 .skills-list ul {
@@ -183,6 +183,7 @@ nav li a.active {
   justify-content: center;
   width: 400px;
   height: 100px;
+  margin: 0.2rem;
 }
 
 .skills-list li {
@@ -199,6 +200,45 @@ nav li a.active {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 33%;
+}
+
+.skills-list .title {
+  font-weight: 900;
+  color: rgb(134, 6, 134);
+  margin-bottom: 4px;
+}
+
+.designSkills .design {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+  .skills-list ul {
+    width: 200px;
+    height: 60px;
+  }
+  .skills-list li {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills img {
+    width: 600px;
+  }
+  .skills-list ul {
+    width: 200px;
+    height: 60px;
+  }
+  .skills-list li {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .skills img {
+    width: 40%;
+  }
 }
 
 /* Toolbox */
@@ -526,6 +566,29 @@ nav li a.active {
   }
 }
 
+/* About Secrion */
+.about-container {
+  margin: 0 auto;
+}
+
+.about {
+  padding: 6rem calc((100vw - 1100px) / 2);
+  margin: 30px;
+}
+
+img {
+  vertical-align: middle;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+}
+
 /* Contact Section */
 
 .content-container {
@@ -550,6 +613,11 @@ nav li a.active {
 
 .content p {
   font-size: 14px;
+}
+
+.content a {
+  background: rgb(134, 6, 134);
+  color: whitesmoke;
 }
 
 .content {
