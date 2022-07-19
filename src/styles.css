@@ -241,78 +241,16 @@ nav li a.active {
   }
 }
 
-/* Toolbox */
-.toolBox .animate__animated {
-  animation-duration: 3s;
-}
-
-.toolBox {
-  max-width: 700px;
-  max-height: 950px;
-  padding: 40px;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 30px;
-}
-
-.toolBox h2 {
-  font-family: var(--heading-font-family);
-  color: var(--branding-color);
-  font-size: 50px;
-  margin-bottom: 25px;
-  text-decoration: underline;
-}
-
-.toolsIcons {
-  padding: 6px 10px 20px 10px;
-  color: var(--branding-color);
-}
-
-.toolsIcons .row {
-  padding: 5px;
-}
-
-.toolsIcons .col {
-  padding: 22px;
-}
-
-.toolsIcons i {
-  font-size: 50px;
-}
-
-@media (max-width: 900px) {
-  .toolBox {
-    text-align: center;
-    padding: 0px;
-    border-radius: 10px;
-    max-width: 500px;
-    max-height: 580px;
-  }
-
-  .toolBox h2 {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .toolsIcons .row .col {
-    font-size: 12px;
-    padding: 0px;
-    margin: 0 auto;
-  }
-
-  .toolsIcons i {
-    font-size: 28px;
-  }
-}
-
 /* Feature Projects */
+
+.featured-projects {
+  background: whitesmoke;
+  font-size: 26px;
+  padding: 2rem;
+}
 
 .featured-projects .animate__animated {
   animation-duration: 3s;
-}
-
-.featured-projects {
-  font-size: 26px;
 }
 
 /* Project Section */
@@ -566,67 +504,134 @@ nav li a.active {
   }
 }
 
-/* About Secrion */
-.about-container {
-  margin: 0 auto;
+/* About Section */
+.about .container {
+  display: flex;
 }
 
 .about {
   padding: 6rem calc((100vw - 1100px) / 2);
-  margin: 30px;
+  padding-bottom: 4rem;
 }
 
-img {
-  vertical-align: middle;
+.about .text {
+  display: block;
+  width: 47%;
+  margin: auto;
+}
+
+.about h1 {
+  font-weight: 900;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+.about h2 {
+  font-weight: 900;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.about p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.about .photo {
+  display: block;
+  margin: auto;
+  justify-content: center;
+}
+
+.about img {
+  width: 400px;
   border-radius: 10px;
-  margin-left: 2rem;
+  margin-left: 4rem;
+}
+
+.about .btn-branding {
+  background: rgb(134, 6, 134);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
 
 @media (max-width: 768px) {
-  .about-container {
+  .about .container {
     grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .text {
+    display: block;
+    width: 80%;
+    margin: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .about img {
+    width: 400px;
+  }
+
+  .about {
     margin: 0 auto;
+    justify-content: center;
+  }
+
+  .about .btn-branding {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .about img {
+    margin: auto;
+    width: 400px;
+  }
+  .about .text {
+    margin: auto;
+    padding-right: 2rem;
   }
 }
 
 /* Contact Section */
 
-.content-container {
+.contact-container {
   padding: 60px 20px;
+  background: whitesmoke;
 }
 
-.content h1 {
+.contact h1 {
   font-size: 64px;
   line-height: 80px;
 }
 
-.content h2 {
+.contact .border {
+  border: 1px solid;
+}
+
+.contact .btn-branding {
+  background: rgb(134, 6, 134);
+  border-radius: 4px;
+  color: white;
   font-size: 18px;
-  font-family: var(--default-font-family);
+  line-height: 27px;
+  padding: 10px 20px;
 }
 
-.content h3 {
-  font-size: 24px;
-  line-height: 1.5;
-  font-family: var(--default-font-family);
-}
-
-.content p {
+.contact p {
   font-size: 14px;
 }
 
-.content a {
-  background: rgb(134, 6, 134);
-  color: whitesmoke;
+.contact-container .contact-box {
+  padding-top: 2rem;
 }
 
-.content {
+.contact a {
+  color: rgb(134, 6, 134);
+  font-size: 20px;
+}
+
+.contact {
   margin: 30px;
-}
-
-img {
-  vertical-align: middle;
-  border-radius: 10px;
 }
 
 .contact-links {
@@ -635,16 +640,7 @@ img {
 }
 
 /* Footer Section */
-
 footer {
-  margin: 60px 0;
-}
-
-footer h3 {
-  font-size: 48px;
-}
-
-footer .contact-box {
   background: linear-gradient(
     60deg,
     #00f26180,
@@ -654,8 +650,21 @@ footer .contact-box {
   );
   background-size: 400% 400%;
   animation: gradient 6s ease infinite;
-  padding: 30px 120px;
-  border-radius: 10px;
+}
+
+footer h3 {
+  font-size: 48px;
+}
+
+footer p {
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+footer .contact-box {
+  background: whitesmoke;
+  padding: 50px 120px 10px 120px;
+  border: 1px solid rgba(144, 143, 143, 0.263);
 }
 
 footer .contact-box p {
