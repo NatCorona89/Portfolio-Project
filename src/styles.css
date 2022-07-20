@@ -261,11 +261,7 @@ nav li a.active {
 /* Project Section */
 
 .project {
-  background: linear-gradient(90deg, #000000, #959696, #fafafb);
-  background-size: 400% 400%;
-  animation: gradient 12s ease infinite;
-  height: fit-content;
-  color: var(--secondary-color);
+  background: #000000;
   padding: 6rem calc((100vw - 1100px) / 2);
   text-align: center;
   z-index: 1;
@@ -281,13 +277,10 @@ nav li a.active {
 }
 
 .project-card {
-  background: linear-gradient(90deg, #fafafb, #818383, #000000);
-  background-size: 400% 400%;
-  animation: gradient 12s ease infinite;
-  height: fit-content;
+  background: whitesmoke;
   padding: 2rem;
   padding-bottom: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   height: 600px;
   width: 340px;
   border-radius: 10px;
@@ -305,21 +298,6 @@ nav li a.active {
   justify-content: center;
   align-items: center;
   margin: auto;
-  position: relative;
-  background: linear-gradient(0deg, #000000, #fff);
-  background-repeat: no-repeat;
-  background-size: 300% 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(2, 2, 2, 0.5);
-}
-
-@keyframes animate {
-  0% {
-    background-position: -600%;
-  }
-  100% {
-    background-position: 600%;
-  }
 }
 
 .project-card img {
