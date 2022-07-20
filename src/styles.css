@@ -27,16 +27,16 @@ h6 {
 /* Navbar Section */
 
 nav {
-  padding: 20px 0;
+  padding: 0;
 }
 
 .nav-container {
   background: linear-gradient(
     60deg,
-    #00f26180,
-    #0576e678,
-    rgba(247, 16, 255, 0.496),
-    rgba(134, 6, 134, 0.483)
+    #00f261,
+    #0576e6,
+    rgb(247, 16, 255),
+    rgb(134, 6, 134)
   );
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
@@ -45,10 +45,10 @@ nav {
 }
 
 .navbar-branding {
-  font-size: 30px;
-  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
   margin-top: 8px;
-  padding: 15px 15px;
+  padding: 8px 8px;
   border-radius: 50%;
   background: whitesmoke;
 }
@@ -61,7 +61,7 @@ nav ul {
   padding: 0;
   margin: 0;
   margin-top: 1rem;
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 nav li {
@@ -476,6 +476,7 @@ nav li a.active {
   .project-card {
     justify-content: space-between;
   }
+
   .product-card img {
     width: 200px;
     height: 200px;
@@ -492,7 +493,7 @@ nav li a.active {
     height: 250px;
   }
   .project-card {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 0;
     justify-content: space-between;
   }
@@ -503,6 +504,7 @@ nav li a.active {
     flex-direction: column;
     align-items: center;
   }
+
   .gradient-border {
     width: 80%;
     height: 100%;
@@ -658,10 +660,10 @@ nav li a.active {
 footer {
   background: linear-gradient(
     60deg,
-    #00f26180,
-    #0576e678,
-    rgba(247, 16, 255, 0.496),
-    rgba(134, 6, 134, 0.483)
+    #00f261,
+    #0576e6,
+    rgb(247, 16, 255),
+    rgb(134, 6, 134)
   );
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
