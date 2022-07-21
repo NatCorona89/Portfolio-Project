@@ -17,6 +17,7 @@ body {
 
 .logo {
   max-height: 40px;
+  min-height: 20px;
 }
 
 h1,
@@ -61,6 +62,8 @@ nav {
 
 nav .logo-1 {
   color: black;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 nav ul {
@@ -86,6 +89,13 @@ nav a {
 nav a:hover,
 nav li a.active {
   color: rgb(2, 2, 2);
+}
+
+@media (max-width: 300px) {
+  nav .logo-1 {
+    max-width: 30%;
+    max-height: 30%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -135,9 +145,10 @@ nav li a.active {
   background: rgb(134, 6, 134);
   border-radius: 4px;
   color: white;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
+  max-width: 100%;
+  line-height: 25px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  padding: 15px 20px;
 }
 
 .hero .btn-branding-outline {
@@ -147,6 +158,22 @@ nav li a.active {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+
+@media (max-width: 300px) {
+  .hero .btn-branding {
+    padding: 2px 2px;
+  }
+}
+@media (max-width: 500px) {
+  .hero .btn-branding {
+    padding: 5px 5px;
+  }
+}
+@media (max-width: 768px) {
+  .hero .btn-branding {
+    padding: 15px 15px;
+  }
 }
 
 /* Skills Section */
@@ -256,7 +283,7 @@ nav li a.active {
 
 .featured-projects {
   background: whitesmoke;
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
   padding-bottom: 4rem;
 }
 
@@ -284,10 +311,9 @@ nav li a.active {
 
 .project-card {
   background: #000000c7;
-  padding: 2rem;
-  padding-bottom: 3rem;
+  padding: 18px 23px;
   margin-bottom: 1.5rem;
-  height: 600px;
+  height: 500px;
   width: 340px;
   border-radius: 10px;
   display: flex;
@@ -298,7 +324,7 @@ nav li a.active {
 }
 
 .project-card h2 {
-  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-size: clamp(1.8rem, 5vw, 2.3rem);
   color: whitesmoke;
   display: flex;
   flex-wrap: wrap;
@@ -308,8 +334,12 @@ nav li a.active {
 }
 
 .project-card img {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  width: 300px;
+  height: 300px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 10px;
   animation-duration: 3s;
 }
 
@@ -365,7 +395,7 @@ nav li a.active {
   color: whitesmoke;
   background-color: black;
   border-radius: 4px;
-  font-size: clamp(0.5rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
   line-height: 27px;
   padding: 15px 30px;
   animation-duration: 3s;
@@ -375,7 +405,7 @@ nav li a.active {
   color: whitesmoke;
   background: whitesmoke;
   border-radius: 4px;
-  font-size: clamp(0.5rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
   line-height: 27px;
   padding: 15px 30px;
   margin-top: 3rem;
@@ -453,7 +483,7 @@ nav li a.active {
   animation-duration: 3s;
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .gradient-border {
     width: 80%;
     height: 100%;
@@ -461,14 +491,9 @@ nav li a.active {
   .project-card {
     justify-content: space-between;
   }
-
-  .product-card img {
-    width: 200px;
-    height: 200px;
-  }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .gradient-border {
     padding-bottom: 0;
   }
@@ -484,19 +509,17 @@ nav li a.active {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media (max-width: 1100px) {
   .project-wrapper {
     flex-direction: column;
     align-items: center;
   }
 
   .gradient-border {
-    width: 80%;
-    height: 100%;
     border-width: 2px;
   }
   .project-card {
-    width: 100%;
+    margin: auto;
     margin-bottom: 2rem;
     justify-content: space-between;
   }
@@ -717,7 +740,7 @@ footer .animate__animated {
 }
 
 .open-source {
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   color: var(--branding-color);
 }
 

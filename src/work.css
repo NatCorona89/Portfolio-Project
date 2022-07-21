@@ -44,7 +44,7 @@ nav ul {
   padding: 0;
   margin: 0;
   margin-top: 1rem;
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 nav li {
@@ -63,6 +63,13 @@ nav a {
 nav a:hover,
 nav li a.active {
   color: rgb(2, 2, 2);
+}
+
+@media (max-width: 300px) {
+  nav .logo-1 {
+    max-width: 30%;
+    max-height: 30%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -124,17 +131,6 @@ nav li a.active {
   justify-content: center;
   align-items: center;
   margin: auto;
-}
-
-.project-description .btn-branding-outline {
-  color: whitesmoke;
-  background: black;
-  border-radius: 4px;
-  font-size: clamp(0.5rem, 2vw, 0.8rem);
-  line-height: 27px;
-  padding: 5px 10px;
-  margin-top: 0.8rem;
-  animation-duration: 3s;
 }
 
 .project-card img {
@@ -273,7 +269,7 @@ nav li a.active {
   animation-duration: 3s;
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .gradient-border {
     width: 80%;
     height: 100%;
@@ -281,13 +277,9 @@ nav li a.active {
   .project-card {
     justify-content: space-between;
   }
-  .product-card img {
-    width: 200px;
-    height: 200px;
-  }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .gradient-border {
     padding-bottom: 0;
   }
@@ -303,14 +295,12 @@ nav li a.active {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media (max-width: 1100px) {
   .project-wrapper {
     flex-direction: column;
     align-items: center;
   }
   .gradient-border {
-    width: 80%;
-    height: 100%;
     border-width: 2px;
   }
   .project-card {
