@@ -5,6 +5,12 @@
   --default-font-family: "Poppins", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--default-font-family);
 }
@@ -608,6 +614,10 @@ nav li a.active {
   background: rgb(134, 6, 134);
   border-radius: 4px;
   color: white;
+  display: block;
+  width: 100%;
+  min-width: 50px;
+  max-width: 200px;
   font-size: 18px;
   line-height: 27px;
   padding: 10px 20px;
@@ -637,15 +647,7 @@ nav li a.active {
 
 /* Footer Section */
 footer {
-  background: linear-gradient(
-    60deg,
-    #00f261,
-    #0576e6,
-    rgb(247, 16, 255),
-    rgb(134, 6, 134)
-  );
-  background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
+  background: whitesmoke;
 }
 
 footer h3 {
@@ -658,7 +660,15 @@ footer p {
 }
 
 footer .contact-box {
-  background: whitesmoke;
+  background: linear-gradient(
+    60deg,
+    #00f261,
+    #0576e6,
+    rgb(247, 16, 255),
+    rgb(134, 6, 134)
+  );
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
   padding: 50px 120px 10px 120px;
   border: 1px solid rgba(144, 143, 143, 0.263);
 }
@@ -668,15 +678,18 @@ footer .contact-box h3 {
 }
 
 footer .contact-box p {
+  font-size: clamp(1rem, 2vw, 2rem);
   margin: 0;
 }
 
 footer .btn-branding {
-  background: rgb(134, 6, 134);
+  background: black;
   border-radius: 4px;
   color: white;
+  width: 100%;
+  max-width: 150px;
   line-height: 25px;
-  font-size: clamp(0.8rem, 2vw, 1.3rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
   padding: 15px 20px;
 }
 
@@ -723,6 +736,11 @@ footer .animate__animated {
   color: var(--branding-color);
 }
 
+@media (max-width: 500px) {
+  .footer .btn-branding {
+  }
+}
+
 @media (max-width: 768px) {
   footer h3 {
     text-align: center;
@@ -734,11 +752,8 @@ footer .animate__animated {
   }
 
   footer .btn-branding {
-    padding: 10px 25px;
     margin: auto;
     margin-bottom: 2rem;
-    width: 30%;
-    text-align: center;
     justify-content: center;
     display: block;
   }

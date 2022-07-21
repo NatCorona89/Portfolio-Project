@@ -327,13 +327,7 @@ nav li a.active {
 
 /* Footer Section */
 footer {
-  background: linear-gradient(
-    60deg,
-    #00f261,
-    #0576e6,
-    rgb(247, 16, 255),
-    rgb(134, 6, 134)
-  );
+  background: whitesmoke;
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
 }
@@ -348,7 +342,17 @@ footer p {
 }
 
 footer .contact-box {
-  background: whitesmoke;
+  background: linear-gradient(
+    60deg,
+    #00f261,
+    #0576e6,
+    rgb(247, 16, 255),
+    rgb(134, 6, 134)
+  );
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  padding: 50px 120px 10px 120px;
+  border: 1px solid rgba(144, 143, 143, 0.263);
   padding: 50px 120px 10px 120px;
   border: 1px solid rgba(144, 143, 143, 0.263);
 }
