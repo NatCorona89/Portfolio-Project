@@ -250,7 +250,7 @@ nav li a.active {
 
 .featured-projects {
   background: whitesmoke;
-  font-size: 26px;
+  font-size: clamp(1rem, 2.5vw, 2rem);
   padding-bottom: 4rem;
 }
 
