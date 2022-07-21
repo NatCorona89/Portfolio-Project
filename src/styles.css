@@ -597,7 +597,7 @@ nav li a.active {
 /* Contact Section */
 
 .contact-container {
-  padding: 60px 20px;
+  padding: 130px 20px;
   background: whitesmoke;
 }
 
@@ -614,12 +614,10 @@ nav li a.active {
   background: rgb(134, 6, 134);
   border-radius: 4px;
   color: white;
-  display: block;
   width: 100%;
-  min-width: 50px;
-  max-width: 200px;
-  font-size: 18px;
-  line-height: 27px;
+  max-width: 130px;
+  line-height: 25px;
+  font-size: clamp(1rem, 2vw, 1rem);
   padding: 10px 20px;
 }
 
@@ -634,10 +632,6 @@ nav li a.active {
 .contact a {
   color: rgb(134, 6, 134);
   font-size: 20px;
-}
-
-.contact {
-  margin: 30px;
 }
 
 .contact-links {
@@ -734,11 +728,6 @@ footer .animate__animated {
 
 .open-source-link:visited {
   color: var(--branding-color);
-}
-
-@media (max-width: 500px) {
-  .footer .btn-branding {
-  }
 }
 
 @media (max-width: 768px) {
