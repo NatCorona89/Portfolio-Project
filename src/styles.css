@@ -408,7 +408,7 @@ nav li a.active {
 
 .more-projects .btn-branding-outline {
   color: whitesmoke;
-  background: whitesmoke;
+  background: black;
   border-radius: 4px;
   font-size: clamp(0.8rem, 2vw, 1rem);
   line-height: 27px;
