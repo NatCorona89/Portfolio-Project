@@ -288,7 +288,7 @@ nav li a.active {
 
 .featured-projects {
   background: whitesmoke;
-  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  font-size: clamp(1rem, 2.5vw, 2rem);
   padding-bottom: 4rem;
 }
 
@@ -306,11 +306,9 @@ nav li a.active {
 }
 
 .project-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px);
+  justify-content: center;
   z-index: 2;
 }
 
@@ -323,7 +321,6 @@ nav li a.active {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: relative;
   z-index: 4;
 }
@@ -336,6 +333,7 @@ nav li a.active {
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 1rem;
 }
 
 .project-card img {
@@ -489,16 +487,24 @@ nav li a.active {
 }
 
 @media (max-width: 500px) {
-  .gradient-border {
-    width: 80%;
-    height: 100%;
+  .project-wrapper {
+    /* justify-content: center; */
   }
+
   .project-card {
     justify-content: space-between;
+    margin: auto;
+  }
+  .product-card img {
+    max-width: 50%;
+    max-height: 50%;
   }
 }
 
 @media (max-width: 768px) {
+  .project-wrapper {
+    /* justify-content: center; */
+  }
   .gradient-border {
     padding-bottom: 0;
   }
@@ -508,26 +514,25 @@ nav li a.active {
     height: 250px;
   }
   .project-card {
-    width: 100%;
     margin-bottom: 0;
     justify-content: space-between;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .project-wrapper {
-    flex-direction: column;
-    align-items: center;
+    /* justify-content: center; */
   }
 
   .gradient-border {
     border-width: 2px;
   }
   .project-card {
+    width: 90%;
     margin: auto;
     margin-bottom: 2rem;
-    justify-content: space-between;
   }
+
   .product-card img {
     width: 250px;
     height: 250px;
@@ -547,7 +552,7 @@ nav li a.active {
 .about .text {
   display: block;
   width: 47%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .about h1 {
@@ -584,6 +589,12 @@ nav li a.active {
   padding: 15px 30px;
 }
 
+@media (max-width: 500px) {
+  .about img {
+    max-width: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .about .container {
     grid-template-columns: 1fr;
@@ -598,7 +609,8 @@ nav li a.active {
     text-align: center;
   }
   .about img {
-    width: 400px;
+    max-width: 350px;
+    margin: auto;
   }
 
   .about {
@@ -613,13 +625,11 @@ nav li a.active {
 
 @media (max-width: 990px) {
   .about img {
-    margin: auto;
-    width: 400px;
+    max-width: 350px;
   }
-  .about .text {
+  /* .about .text {
     margin: auto;
-    padding-right: 2rem;
-  }
+  } */
 }
 
 /* Contact Section */
