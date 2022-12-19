@@ -83,7 +83,7 @@ nav li a.active {
 
 .featured-projects {
   background: whitesmoke;
-  font-size: 26px;
+  font-size: clamp(1.2rem, 4vw, 1.8rem);
   padding: 2rem;
 }
 
@@ -101,6 +101,7 @@ nav li a.active {
 }
 
 .project-wrapper {
+  /* Responsive columns that auto adjust */
   display: grid;
   grid-template-columns: repeat(auto-fit, 270px);
   justify-content: center;
