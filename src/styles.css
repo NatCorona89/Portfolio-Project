@@ -292,6 +292,36 @@ nav li a.active {
   animation-duration: 3s;
 }
 
+.dark .featured-projects {
+  color: whitesmoke;
+  background: black;
+}
+
+.theme-button {
+  border-radius: 2rem;
+  background: black;
+  color: whitesmoke;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  transition: all 150ms ease-in-out;
+  animation-duration: 3s;
+  border: 1px solid purple;
+}
+
+.theme-button:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+.dark .theme-button {
+  background: whitesmoke;
+  color: black;
+}
+.dark .theme-button:hover {
+  background: black;
+  color: whitesmoke;
+}
+
 /* Project Section */
 
 .project {
@@ -309,8 +339,23 @@ nav li a.active {
   z-index: 2;
 }
 
+.dark .project {
+  background: black;
+}
+
 .project-card {
   background: #000000c7;
+  padding: 18px 23px;
+  margin-bottom: 1.5rem;
+  height: 500px;
+  width: 340px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 4;
+}
+
+.dark .project-card {
+  background: #fefdfdc7;
   padding: 18px 23px;
   margin-bottom: 1.5rem;
   height: 500px;
@@ -329,6 +374,10 @@ nav li a.active {
   align-items: center;
   margin: auto;
   margin-top: 1rem;
+}
+
+.dark .project-card h2 {
+  color: black;
 }
 
 .project-card img {
@@ -408,6 +457,10 @@ nav li a.active {
   padding: 15px 30px;
   margin-top: 3rem;
   animation-duration: 3s;
+}
+
+.dark .project-button {
+  background: whitesmoke;
 }
 
 .glow-on-hover:before {
