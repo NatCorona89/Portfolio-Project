@@ -38,6 +38,7 @@ nav {
 
 nav .logo-1 {
   color: black;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
 }
 
 nav ul {
@@ -65,20 +66,6 @@ nav li a.active {
   color: rgb(2, 2, 2);
 }
 
-@media (max-width: 300px) {
-  nav .logo-1 {
-    max-width: 30%;
-    max-height: 30%;
-  }
-}
-
-@media (max-width: 900px) {
-  nav .logo-1 {
-    max-width: 50%;
-    max-height: 50%;
-  }
-}
-
 /* Featured Projects */
 
 .header {
@@ -86,11 +73,21 @@ nav li a.active {
   padding: 2rem;
 }
 
+.dark .header {
+  background: black;
+  color: whitesmoke;
+}
+
 .featured-projects {
   background: whitesmoke;
   font-size: clamp(1.2rem, 4vw, 1.8rem);
   padding: 2rem;
   margin-top: 2rem;
+}
+
+.dark .featured-projects {
+  background: black;
+  color: whitesmoke;
 }
 
 .featured-projects .animate__animated {
@@ -105,6 +102,10 @@ nav li a.active {
 .dark .project-wrapper {
   color: black;
   background: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 270px);
+  justify-content: center;
+  z-index: 2;
 }
 
 .theme-button {
@@ -117,7 +118,7 @@ nav li a.active {
   justify-content: center;
   margin: auto;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   transition: all 150ms ease-in-out;
   animation-duration: 3s;
   border: 3px solid purple;
@@ -137,6 +138,19 @@ nav li a.active {
 .dark .theme-button:hover {
   background: black;
   color: whitesmoke;
+}
+
+@media (max-width: 500px) {
+  .theme-button {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .theme-button {
+    padding: 1rem 1rem;
+    font-size: 12px;
+  }
 }
 
 /* Work Section */

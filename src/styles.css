@@ -324,6 +324,19 @@ nav li a.active {
   color: whitesmoke;
 }
 
+@media (max-width: 500px) {
+  .theme-button {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .theme-button {
+    padding: 1rem 1rem;
+    font-size: 12px;
+  }
+}
+
 /* Project Section */
 
 .project {
@@ -340,6 +353,15 @@ nav li a.active {
   justify-content: center;
   z-index: 2;
 }
+
+/* .dark .project-wrapper {
+  color: black;
+  background: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 270px);
+  justify-content: center;
+  z-index: 2;
+} */
 
 .dark .project {
   background: black;
@@ -361,7 +383,7 @@ nav li a.active {
   padding: 18px 23px;
   margin-bottom: 1.5rem;
   height: 500px;
-  width: 340px;
+  /* width: 340px; */
   border-radius: 10px;
   position: relative;
   z-index: 4;
