@@ -81,14 +81,62 @@ nav li a.active {
 
 /* Featured Projects */
 
+.header {
+  background: whitesmoke;
+  padding: 2rem;
+}
+
 .featured-projects {
   background: whitesmoke;
   font-size: clamp(1.2rem, 4vw, 1.8rem);
   padding: 2rem;
+  margin-top: 2rem;
 }
 
 .featured-projects .animate__animated {
   animation-duration: 3s;
+}
+
+.dark .project {
+  color: black;
+  background: whitesmoke;
+}
+
+.dark .project-wrapper {
+  color: black;
+  background: whitesmoke;
+}
+
+.theme-button {
+  border-radius: 2rem;
+  background: black;
+  color: whitesmoke;
+  padding: 1rem;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  transition: all 150ms ease-in-out;
+  animation-duration: 3s;
+  border: 3px solid purple;
+}
+
+.theme-button:hover {
+  background: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
+
+.dark .theme-button {
+  background: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
+.dark .theme-button:hover {
+  background: black;
+  color: whitesmoke;
 }
 
 /* Work Section */
